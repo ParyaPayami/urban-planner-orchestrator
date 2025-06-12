@@ -64,3 +64,35 @@ One interesting observation is that the orchestrator + agents system made the pr
 We have presented a comprehensive AI-based architecture to automate urban planning workflows in local government, validated through a prototype implementation and pilot evaluation. By orchestrating a collection of specialized LLM and computer vision agents, our system can handle the bulk of routine tasks in permitting and planning processes – from reading applications and checking zoning codes to drafting approval documents – while always keeping a human planner in control of final decisions. The approach draws on state-of-the-art AI (leveraging the natural language prowess of LLMs and the pattern recognition of CV) and tailors it to the practical needs and constraints of city planning offices (maintaining transparency, consistency, and legal compliance). In our tests, the system dramatically reduced manual workloads and processing times, without sacrificing accuracy or accountability. These outcomes suggest that such AI orchestration can help planning departments better cope with high case volumes and allow planners to dedicate more attention to complex judgement-intensive aspects of their work, ultimately leading to more efficient and effective urban development governance.
 Moving forward, there are several avenues for expansion and improvement. One is to deepen the capabilities of individual agents: for example, enhancing the plan review agent to check more intricate building code requirements (possibly by incorporating domain-specific CV models or integrating with BIM when available), or training the document agent on a wider corpus of planning reports to further refine its drafting style. Another avenue is incorporating public engagement into the workflow – e.g., an agent that analyzes public comment letters (using NLP sentiment analysis as hinted by othersaspeneg.com) and summarizes key concerns for planners, which could be highly valuable in contentious projects. We also plan to integrate geospatial analysis: an agent that can automatically analyze GIS data (like proximity to transit or impact on infrastructure) to enrich the planning analysis. From a technical perspective, exploring the use of a knowledge graph to unify all regulatory knowledge (combining zoning, building codes, environmental rules) could provide a more robust backbone for the orchestrator’s decision-making, as knowledge graphs have shown promise in compliance checkingnature.com.
 Finally, an important direction is user-centric evaluation: deploying the system in a live environment and measuring its impact on not just efficiency, but on outcomes like quality of service (e.g., do applicants get clearer feedback?), equity (ensuring all communities benefit equally from faster processes), and planner satisfaction. We will collaborate with additional cities to pilot the system and gather such insights. With appropriate training and change management, we anticipate that planners will increasingly embrace AI tools as part of their standard toolkit, just as CAD and GIS became indispensable in prior decades. By rigorously grounding these tools in domain knowledge and maintaining human oversight, the vision of an AI-assisted “smart planning office” can be realized in a responsible and effective manner, ultimately contributing to more responsive and well-managed urban development.
+## Installation
+
+Clone the repository and install in editable mode:
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+Run the example orchestrator:
+
+```bash
+python -m urban_planner_orchestrator.orchestrator
+```
+
+The script prompts for a few inputs to simulate human actions.
+
+## Testing
+
+Install the development requirements and run tests:
+
+```bash
+pip install -r requirements.txt
+pytest
+```
+
+
+## License
+
+This project is released under the MIT License. See [LICENSE](LICENSE).
+
