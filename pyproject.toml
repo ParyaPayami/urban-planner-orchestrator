@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "urban-planner-orchestrator"
+version = "0.1.0"
+description = "Multi-agent AI system automating urban planning workflows"
+authors = [{name = "Urban Planner"}]
+license = {text = "MIT"}
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.package-dir]
+"" = "urban_planner_orchestrator"
