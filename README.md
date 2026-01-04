@@ -1,5 +1,5 @@
 # urban-planner-orchestrator
-A modular, orchestrated multi-agent AI system automating urban planning workflows through specialized agents using Large Language Models (LLMs) and Computer Vision (CV). Streamlines permit processing, zoning checks, plan reviews, and document drafting, while ensuring human-in-the-loop oversight for legal compliance and accuracy.
+A modular, orchestrated multi-agent AI system automating local government urban planning workflows through specialized agents using Large Language Models (LLMs) and Computer Vision (CV). Streamlines permit processing, zoning checks, plan reviews, and document drafting, while ensuring human-in-the-loop oversight for legal compliance and accuracy.
 
 An Orchestrated Multi Agent AI Architecture for Automating Urban Planning Workflows
 Abstract
